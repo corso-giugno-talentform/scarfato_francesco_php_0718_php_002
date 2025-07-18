@@ -77,3 +77,50 @@ Scrivere un programma funzionale che, dato un numero in input ($max), stampi a v
 0,2,4,6,8,10
 ```
 
+# ############################################################################
+# OOP
+# ############################################################################
+
+Ricordate:
+
+1) Nome classe sempre al singolare
+
+2) Prima lettera sempre maiuscola
+
+3) Bisogna sempre scrivere in inglese (tutto)
+
+La famosa azienda Talentform ha appena acquistato 5 aziende più piccole con sedi sparse in tutte il mondo.
+
+Vi è stato chiesto di realizzare un sistema di monitoraggio fiscale per ognuna di queste Sedi.
+
+Essendo dati finanziari, gli eventuali errori di logica devono rasentare lo 0.
+
+Utilizzare, quindi, un approccio orientato agli oggetti per risolvere la traccia.
+
+Esercizio 1
+Creare una classe Azienda (Company) che abbia gli attributi public:
+
+Nome: Nome della sede;
+Sede: Stato in cui è ubicata la sede;
+Totale Dipendenti (default=0): Numero di dipendenti assunti in quella sede.
+Definire la funzione __construct() come visto a lezione per prendere in input i 3 attributi.
+
+Esercizio 2
+Una volta definita la classe, istanziare 5 Sedi con i rispettivi dati e controllare che siano stati correttamente memorizzati con un var_dump();
+
+//Istanzio i 5 Oggetti
+$company1 = new Company('Apple', 'USA', 3);
+$company2 = new Company('Barilla', 'ITA', 3);
+$company3 = new Company('Nintendo', 'JAP', 5);
+$company4 = new Company('Nokia', 'FIN', 10);
+$company5 = new Company('Xioami', 'CHI', 3);
+
+var_dump($company1); //ecc
+Esercizio 3
+Utilizzando la classe Azienda appena creata, implementare un metodo in grado di stampare via terminale:
+
+L'ufficio $this->nome con sede in $this->sede ha ben $this->dipendenti dipendenti.
+
+Se il $this→dipendenti è > di 0. Altrimenti se i dipendenti sono 0 (valore di default) stampare:
+
+L’ufficio $this->nome con sede in $this->sede non ha dipendenti

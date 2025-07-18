@@ -21,7 +21,7 @@ echo "\n";
 **/
 
 function multipleOf($number, $base) {
-    return ($number % $base == 0)
+    return ($number % $base === 0)
         ? true
         : false
     ;
