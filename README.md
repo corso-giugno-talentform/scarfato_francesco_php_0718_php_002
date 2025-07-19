@@ -97,7 +97,10 @@ Essendo dati finanziari, gli eventuali errori di logica devono rasentare lo 0.
 
 Utilizzare, quindi, un approccio orientato agli oggetti per risolvere la traccia.
 
-Esercizio 1
+# ############################################################################
+# OOP esercizio 1
+# ############################################################################
+
 Creare una classe Azienda (Company) che abbia gli attributi public:
 
 Nome: Nome della sede;
@@ -105,7 +108,10 @@ Sede: Stato in cui è ubicata la sede;
 Totale Dipendenti (default=0): Numero di dipendenti assunti in quella sede.
 Definire la funzione __construct() come visto a lezione per prendere in input i 3 attributi.
 
-Esercizio 2
+# ############################################################################
+# OOP esercizio 2
+# ############################################################################
+
 Una volta definita la classe, istanziare 5 Sedi con i rispettivi dati e controllare che siano stati correttamente memorizzati con un var_dump();
 
 //Istanzio i 5 Oggetti
@@ -116,7 +122,11 @@ $company4 = new Company('Nokia', 'FIN', 10);
 $company5 = new Company('Xioami', 'CHI', 3);
 
 var_dump($company1); //ecc
-Esercizio 3
+
+# ############################################################################
+# OOP esercizio 3
+# ############################################################################
+
 Utilizzando la classe Azienda appena creata, implementare un metodo in grado di stampare via terminale:
 
 L'ufficio $this->nome con sede in $this->sede ha ben $this->dipendenti dipendenti.
@@ -125,7 +135,10 @@ Se il $this→dipendenti è > di 0. Altrimenti se i dipendenti sono 0 (valore di
 
 L’ufficio $this->nome con sede in $this->sede non ha dipendenti
 
-Esercizio 4
+# ############################################################################
+# OOP esercizio 4
+# ############################################################################
+
 Proseguendo con la classe appena creata Company, definire 1 attributo statico relativo a:
 
 //Attributi
@@ -145,7 +158,10 @@ e successivamente un metodo (non nel costruttore, attenzione) in grado di calcol
 Il costo annuale dell'Ufficio $nome è di XXXXXX Euro
 Il costo totale per l'azienda HP3 attualmente è di XXXXXX Euro (Valore che aumenta ogni volta)
 
-Esercizio 5
+# ############################################################################
+# OOP esercizio 5
+# ############################################################################
+
 Adesso vogliamo conoscere quanto gravano queste 5 sedi all’azienda HP. Creare un attributo statico:
 
 //Attributi
@@ -154,8 +170,10 @@ E di volta in volta somma in maniera ricorsiva il totale economico speso:
 
 self::$total += $costo_totale_azienda
 
+# ############################################################################
+# OOP esercizio 6
+# ############################################################################
 
-Esercizio 6
 Dulcis in fundo, come ultimo task da eseguire, stampare nel terminale il totale assoluto di tutte le aziende 1 sola volta, con un metodo statico.
 
 Utilizzare un metodo statico attraverso la classe Company (No oggetto) e richiamarlo come visto a lezione.
