@@ -124,3 +124,38 @@ L'ufficio $this->nome con sede in $this->sede ha ben $this->dipendenti dipendent
 Se il $this→dipendenti è > di 0. Altrimenti se i dipendenti sono 0 (valore di default) stampare:
 
 L’ufficio $this->nome con sede in $this->sede non ha dipendenti
+
+Esercizio 4
+Proseguendo con la classe appena creata Company, definire 1 attributo statico relativo a:
+
+//Attributi
+
+public static $stipendio_medio_mensile = 1500;
+E implementare un nuovo metodo che, per ogni oggetto Azienda Istanziato, calcoli la spesa annuale in euro con la formula
+
+numero dipendenti * ($stipendio_medio_mensile * 12)
+
+e la stampi per ogni oggetto:
+
+$tot = $this->dipendenti * (self::$stipendio_medio_mensile * 12);
+
+echo "Il costo annuale dell'Ufficio $nome è di $tot Euro"
+e successivamente un metodo (non nel costruttore, attenzione) in grado di calcolare di volta in volta tutti i totali:
+
+Il costo annuale dell'Ufficio $nome è di XXXXXX Euro
+Il costo totale per l'azienda HP3 attualmente è di XXXXXX Euro (Valore che aumenta ogni volta)
+
+Esercizio 5
+Adesso vogliamo conoscere quanto gravano queste 5 sedi all’azienda HP. Creare un attributo statico:
+
+//Attributi
+public static $totale = 0;
+E di volta in volta somma in maniera ricorsiva il totale economico speso:
+
+self::$total += $costo_totale_azienda
+
+
+Esercizio 6
+Dulcis in fundo, come ultimo task da eseguire, stampare nel terminale il totale assoluto di tutte le aziende 1 sola volta, con un metodo statico.
+
+Utilizzare un metodo statico attraverso la classe Company (No oggetto) e richiamarlo come visto a lezione.
